@@ -1,0 +1,75 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap");
+* {
+  font-family: "Inter", sans-serif;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  transition: all ease-in-out 500ms;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  gap: 2rem;
+}
+.container .top {
+  background-image: url("./bg-sidebar-mobile2.png");
+  padding: 1rem 2rem;
+  width: 70%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 10px;
+}
+.container .top .title {
+  font-size: 50px;
+  color: white;
+  font-weight: 700;
+}
+.main {
+  background-color: white;
+  padding: 1.7rem 3rem 2rem;
+  display: grid;
+  gap: 0.8rem;
+  border-radius: 10px;
+  width: 70%;
+  box-shadow: 0px 19px 23px 7px rgba(0, 0, 0, 0.1);
+}
+.main label {
+  font-size: 30px;
+  font-weight: 500;
+}
+.main input {
+  padding: 1rem 1.5rem;
+  border-radius: 0.7rem;
+  border: 1px solid lightgray;
+  outline: none;
+  font-size: 20px;
+}
+.container .button {
+  display: flex;
+  justify-content: flex-end;
+  width: 70%;
+}
+.container .button button {
+  width: 20%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1.5rem;
+  height: 3.5rem;
+  outline: none;
+  background-image: url("bg-sidebar-mobile2.png");
+  background-blend-mode: darken;
+  border: none;
+  color: white;
+  font-size: 25px;
+  font-weight: 700;
+  border-radius: 10px;
+  box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+}
+.container .button button:hover {
+  color: black;
+}
