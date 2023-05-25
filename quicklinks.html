@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>QuickLinks</title>
+    <link rel="stylesheet" href="quicklinks.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <div class="q-container">
+      <div class="main">
+        <div class="profile-icon">
+          <div class="icon">iCON</div>
+          <img src="nic.jpg" alt="" width="45" height="45" />
+        </div>
+        <div class="backbtn">
+          <i class="fa-sharp fa-solid fa-arrow-left"></i>
+        </div>
+        <div class="search">
+          <input type="text" />
+          <button>Search</button>
+        </div>
+        <div class="links">
+          <div class="link">
+            <h2 class="maintxt">Lorem Ipsum</h2>
+            <small class="subtxt"
+              >Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iusto
+              modi.</small
+            >
+          </div>
+          <div class="link">
+            <h2 class="maintxt">Lorem Ipsum</h2>
+            <small class="subtxt"
+              >Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iusto
+              modi.</small
+            >
+          </div>
+          <div class="link">
+            <h2 class="maintxt">Lorem Ipsum</h2>
+            <small class="subtxt"
+              >Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iusto
+              modi.</small
+            >
+          </div>
+          <div class="link">
+            <h2 class="maintxt">Lorem Ipsum</h2>
+            <small class="subtxt"
+              >Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iusto
+              modi.</small
+            >
+          </div>
+          <div class="link">
+            <h2 class="maintxt">Lorem Ipsum</h2>
+            <small class="subtxt"
+              >Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iusto
+              modi.</small
+            >
+          </div>
+          <div class="link">
+            <h2 class="maintxt">Lorem Ipsum</h2>
+            <small class="subtxt"
+              >Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iusto
+              modi.</small
+            >
+          </div>
+          <div class="link">
+            <h2 class="maintxt">Lorem Ipsum</h2>
+            <small class="subtxt"
+              >Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iusto
+              modi.</small
+            >
+          </div>
+          <div class="link">
+            <h2 class="maintxt">Lorem Ipsum</h2>
+            <small class="subtxt"
+              >Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iusto
+              modi.</small
+            >
+          </div>
+          <div class="link">
+            <h2 class="maintxt">Lorem Ipsum</h2>
+            <small class="subtxt"
+              >Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iusto
+              modi.</small
+            >
+          </div>
+          <div class="link">
+            <h2 class="maintxt">Lorem Ipsum</h2>
+            <small class="subtxt"
+              >Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iusto
+              modi.</small
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+    <script>
+      document.querySelector(".fa-arrow-left").addEventListener("click", () => {
+        window.location.href = "index.html";
+      });
+      var links = document.querySelectorAll(".link");
+      links.forEach((link) => {
+        link.addEventListener("click", () => {
+          window.location.href = "post.html";
+        });
+      });
+      document.querySelector(".icon").addEventListener("click", () => {
+        window.location.href = "index.html";
+      });
+    </script>
+  </body>
+</html>

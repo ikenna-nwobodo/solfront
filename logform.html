@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Log Complaint</title>
+    <link rel="stylesheet" href="logform.css" />
+  </head>
+  <body>
+    <div class="f-container">
+      <div class="main">
+        <div class="profile-icon">
+          <div class="icon">iCON</div>
+          <img src="nic.jpg" alt="" width="45" height="45" />
+        </div>
+        <div class="top"><div class="title">Log Complaint</div></div>
+        <div class="mainform">
+          <form action="#">
+            <div class="form-input">
+              <label for="name">Name</label>
+              <input type="text" name="name" placeholder="Enter name" />
+            </div>
+            <div class="form-input">
+              <label for="name">Role</label>
+              <select name="product" id="">
+                <option value="none" selected disabled hidden>
+                  Select Role
+                </option>
+                <option value="b1">Manager</option>
+                <option value="b1">Worker</option>
+                <option value="b1">Partner</option>
+              </select>
+            </div>
+            <div class="form-input">
+              <label for="product">Product</label>
+              <select name="product" id="">
+                <option value="none" selected disabled hidden>
+                  Select Product
+                </option>
+                <option value="b1">SAP B1</option>
+                <option value="b1">SAP BYD</option>
+                <option value="b1">SAP S4HANA</option>
+              </select>
+            </div>
+            <div class="form-input">
+              <label for="complaint">Complaint</label>
+              <textarea
+                name="complaint"
+                id="complaint"
+                rows="10"
+                placeholder="Kindly let us know what problem you're facing"
+              ></textarea>
+            </div>
+          </form>
+        </div>
+        <div class="bottom">
+          <div class="btmbutton">
+            <button>Submit</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script>
+      document.querySelector(".btmbutton").addEventListener("click", () => {
+        window.location.href = "loading.html";
+      });
+      document.querySelector(".icon").addEventListener("click", () => {
+        window.location.href = "index.html";
+      });
+    </script>
+  </body>
+</html>
